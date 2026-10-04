@@ -8,7 +8,12 @@
 
 sentence = input("Enter a sentence: ")
 
-word_count = len(sentence.split())
-print("Word count:", word_count)
+if sentence.strip() == "":
+    print("You did not enter a sentence.")
+else:
+    word_count = len(sentence.split())
+    character_count = len(sentence)
 
+    print("Word count:", word_count)
+    print("Character count (including spaces):", character_count)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
